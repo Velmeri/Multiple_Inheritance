@@ -5,8 +5,8 @@
 using namespace std;
 
 int main() {
-	InscribedCircle A (10, 5);
-	InscribedCircle B (5, 10);
+	InscribedCircle::InscribedCircle A (10, 5);
+	InscribedCircle::InscribedCircle B (5, 10);
 
 	string answerA = A.IsInscribed() ? "yes": "no";
 	string answerB = B.IsInscribed() ? "yes" : "no";

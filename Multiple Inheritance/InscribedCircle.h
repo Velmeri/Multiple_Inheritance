@@ -2,10 +2,9 @@
 #include "Circle.h"
 #include "Square.h"
 
-	using namespace Circle;
-	using namespace Square;
+namespace InscribedCircle {
 
-	class InscribedCircle : protected Circle, protected Square {
+	class InscribedCircle : protected Circle::Circle, protected Square::Square {
 	public:
 		InscribedCircle(double d, double SL) {
 			diameter = d;
@@ -15,3 +14,4 @@
 			return diameter / 2 == SideLength;
 		}
 	};
+}
